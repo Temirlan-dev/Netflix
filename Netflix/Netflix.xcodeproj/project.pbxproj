@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224DCED629ADD632001A7CDA /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DCED529ADD632001A7CDA /* HeroHeaderUIView.swift */; };
 		22AE88A129A8FE760034121F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE88A029A8FE760034121F /* AppDelegate.swift */; };
 		22AE88A329A8FE760034121F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE88A229A8FE760034121F /* SceneDelegate.swift */; };
 		22AE88A529A8FE760034121F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE88A429A8FE760034121F /* MainTabBarViewController.swift */; };
@@ -17,9 +18,11 @@
 		22AE88BA29A9019F0034121F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE88B929A9019F0034121F /* SearchViewController.swift */; };
 		22AE88BD29A901CD0034121F /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE88BC29A901CD0034121F /* DownloadViewController.swift */; };
 		22AE88C329A906E80034121F /* HomeVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE88C229A906E80034121F /* HomeVC+TableView.swift */; };
+		22AE88C629A91EBD0034121F /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE88C529A91EBD0034121F /* CollectionViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		224DCED529ADD632001A7CDA /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 		22AE889D29A8FE760034121F /* Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22AE88A029A8FE760034121F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22AE88A229A8FE760034121F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		22AE88B929A9019F0034121F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		22AE88BC29A901CD0034121F /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		22AE88C229A906E80034121F /* HomeVC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+TableView.swift"; sourceTree = "<group>"; };
+		22AE88C529A91EBD0034121F /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		22AE889F29A8FE760034121F /* Netflix */ = {
 			isa = PBXGroup;
 			children = (
+				22AE88C429A91E8D0034121F /* Views */,
 				22AE88B429A900DA0034121F /* Controllers */,
 				22AE88A029A8FE760034121F /* AppDelegate.swift */,
 				22AE88A229A8FE760034121F /* SceneDelegate.swift */,
@@ -117,6 +122,15 @@
 				22AE88BC29A901CD0034121F /* DownloadViewController.swift */,
 			);
 			path = DownloadVC;
+			sourceTree = "<group>";
+		};
+		22AE88C429A91E8D0034121F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22AE88C529A91EBD0034121F /* CollectionViewTableViewCell.swift */,
+				224DCED529ADD632001A7CDA /* HeroHeaderUIView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +204,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				22AE88BA29A9019F0034121F /* SearchViewController.swift in Sources */,
+				224DCED629ADD632001A7CDA /* HeroHeaderUIView.swift in Sources */,
 				22AE88C329A906E80034121F /* HomeVC+TableView.swift in Sources */,
 				22AE88A529A8FE760034121F /* MainTabBarViewController.swift in Sources */,
 				22AE88A129A8FE760034121F /* AppDelegate.swift in Sources */,
 				22AE88BD29A901CD0034121F /* DownloadViewController.swift in Sources */,
+				22AE88C629A91EBD0034121F /* CollectionViewTableViewCell.swift in Sources */,
 				22AE88A329A8FE760034121F /* SceneDelegate.swift in Sources */,
 				22AE88B829A9014F0034121F /* UpcomingViewController.swift in Sources */,
 				22AE88B629A901240034121F /* HomeViewController.swift in Sources */,

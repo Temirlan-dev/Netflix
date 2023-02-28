@@ -9,13 +9,14 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var tableView = UITableView()
+    var tableView: UITableView = {
+        let table = UITableView(frame: .zero, style: .grouped)
+        return table
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configView()
-        setupTableView()
     }
     
     override func viewDidLayoutSubviews() {
@@ -25,6 +26,8 @@ class HomeViewController: UIViewController {
     
     func configView() {
         view.backgroundColor = .systemBackground
-        
+        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        tableView.tableHeaderView = headerView
+        setupTableView()
     }
 }
