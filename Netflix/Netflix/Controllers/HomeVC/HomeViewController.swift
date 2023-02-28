@@ -9,6 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    let sectionTitles: [String] = ["Trending Movies", "Trending Tv", "Popular", "Upcoming Movies", "Top rated"]
+    
     var tableView: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
         return table
@@ -26,7 +28,7 @@ class HomeViewController: UIViewController {
     
     func configView() {
         view.backgroundColor = .systemBackground
-        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 500))
         tableView.tableHeaderView = headerView
         setupTableView()
         configureNavbar()
