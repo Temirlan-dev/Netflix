@@ -32,6 +32,12 @@ class HomeViewController: UIViewController {
         tableView.tableHeaderView = headerView
         setupTableView()
         configureNavbar()
+        getTrendingMovies()
+    }
+    
+    private func getTrendingMovies() {
+        APICaller.shared.getTrendingMovies { _ in
+        }
     }
     
     private func configureNavbar() {
