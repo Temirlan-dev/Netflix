@@ -7,14 +7,6 @@
 
 import UIKit
 
-enum Sections: Int {
-    case TrendingMovies = 0
-    case TrendingTv = 1
-    case Popular = 2
-    case Upcoming = 3
-    case TopRated = 4
-}
-
 class HomeViewController: UIViewController {
     
     let sectionTitles: [String] = ["Trending Movies", "Trending Tv", "Popular", "Upcoming Movies", "Top rated"]
@@ -36,22 +28,8 @@ class HomeViewController: UIViewController {
     
     func configView() {
         view.backgroundColor = .systemBackground
-        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 500))
-        tableView.tableHeaderView = headerView
         setupTableView()
         configureNavbar()
-        getTrendingMovies()
-    }
-    
-    private func getTrendingMovies() {
-        APICaller.shared.getTrendingMovies { result in
-            switch result {
-            case .success(let movies):
-                print(movies)
-            case .failure(let error):
-                print(error)
-            }
-        }
     }
     
     private func configureNavbar() {
@@ -65,4 +43,12 @@ class HomeViewController: UIViewController {
         ]
         navigationController?.navigationBar.tintColor = .white
     }
+}
+
+enum Sections: Int {
+    case TrendingMovies = 0
+    case TrendingTv = 1
+    case Popular = 2
+    case Upcoming = 3
+    case TopRated = 4
 }
